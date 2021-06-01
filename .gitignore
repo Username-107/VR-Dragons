@@ -1,1 +1,7 @@
 /vr.apk
+Assets/
+Logs/
+Temp/
+Library/
+obj/Debug/
+*.cache
