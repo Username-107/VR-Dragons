@@ -10,6 +10,7 @@ public class DroneExplode : MonoBehaviour
         foreach (Transform child in transform)
         {
             child.gameObject.AddComponent<Rigidbody>().AddExplosionForce(10, transform.position, 5, 3);
+            Destroy(child, 3);
         }
     }
 
