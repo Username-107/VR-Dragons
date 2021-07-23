@@ -6,7 +6,7 @@ public class Hand : MonoBehaviour
 {
     public Climber climber;
     public OVRInput.Controller controller;
-    public Vector3 Delta { private set; get;}
+    public Vector3 Delta { private set; get; }
     GameObject currentPoint;
     public List<GameObject> contactPoints;
     public SkinnedMeshRenderer meshRenderer;
@@ -18,11 +18,11 @@ public class Hand : MonoBehaviour
     }
     private void Update()
     {
-        if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, controller))
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger, controller))
         {
             GrabPoint();
         }
-        if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, controller))
+        if (OVRInput.GetUp(OVRInput.Button.PrimaryHandTrigger, controller))
         {
             ReleasePoint();
         }
@@ -70,7 +70,7 @@ public class Hand : MonoBehaviour
 
     void AddPoint(GameObject newObject)
     {
-        if(newObject.tag=="ClimbPoint")
+        if (newObject.tag == "ClimbPoint")
         {
             contactPoints.Add(newObject);
         }

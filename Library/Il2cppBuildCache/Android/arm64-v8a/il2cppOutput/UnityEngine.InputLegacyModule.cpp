@@ -1725,6 +1725,16 @@ IL_000a:
 		return L_2;
 	}
 }
+// System.Boolean UnityEngine.Input::get_anyKeyDown()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_get_anyKeyDown_m0E5B02352AC40A25BBE31F4532764279D5AF03A5 (const RuntimeMethod* method)
+{
+	typedef bool (*Input_get_anyKeyDown_m0E5B02352AC40A25BBE31F4532764279D5AF03A5_ftn) ();
+	static Input_get_anyKeyDown_m0E5B02352AC40A25BBE31F4532764279D5AF03A5_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Input_get_anyKeyDown_m0E5B02352AC40A25BBE31F4532764279D5AF03A5_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Input::get_anyKeyDown()");
+	bool icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 // UnityEngine.Vector3 UnityEngine.Input::get_mousePosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Input_get_mousePosition_m79528BC2F30C57054641F709C855130AE586AC0E (const RuntimeMethod* method)
 {

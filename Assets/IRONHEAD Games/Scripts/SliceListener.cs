@@ -9,4 +9,8 @@ public class SliceListener : MonoBehaviour
     {
         slicer.isTouched = true;
     }
+    void Update()
+    {
+        transform.localScale = new Vector3(1, 1, 1);
+    }
 }
